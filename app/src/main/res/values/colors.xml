@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="red">#D22B2B</color>
-    <color name="green">#098d3a</color>
-    <color name="blue">#25c8ec</color>
+    <!-- Instrument surfaces -->
+    <color name="ink">#0B111C</color>
+    <color name="panel">#141C2B</color>
+    <color name="panel_raised">#1B2537</color>
+    <color name="hairline">#253349</color>
+
+    <!-- Type -->
+    <color name="text_primary">#E8EEF8</color>
+    <color name="text_muted">#7C8EA9</color>
+    <color name="text_dim">#4C5D77</color>
+
+    <!-- Channels: one colour per axis, used for traces, labels and readouts -->
+    <color name="channel_x">#FF6B6B</color>
+    <color name="channel_y">#4ADE80</color>
+    <color name="channel_z">#38BDF8</color>
+
+    <!-- Armed / recording -->
+    <color name="amber">#FFB020</color>
+    <color name="amber_dim">#5A421A</color>
 </resources>

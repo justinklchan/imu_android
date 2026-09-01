@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">IMU</string>
+    <string name="instrument_label">IMU RECORDER</string>
+    <string name="display_label">DISPLAY</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_recording">Recording</string>
+    <string name="status_no_sensor">No sensors</string>
+
+    <string name="axis_x">X</string>
+    <string name="axis_y">Y</string>
+    <string name="axis_z">Z</string>
+
+    <string name="sensor_accel">Accelerometer</string>
+    <string name="sensor_gyro">Gyroscope</string>
+    <string name="sensor_mag">Magnetometer</string>
+    <string name="chip_accel">Accel</string>
+    <string name="chip_gyro">Gyro</string>
+    <string name="chip_mag">Mag</string>
+
+    <string name="action_record">Record</string>
+    <string name="action_stop">Stop</string>
+    <string name="window_format">Window %s</string>
+    <string name="reset_view">Reset view</string>
+    <string name="chart_empty">Waiting for samples</string>
+    <string name="value_placeholder">--.--</string>
+    <string name="footer_idle">No capture yet</string>
+    <string name="no_sensor_detail">This device reports no motion sensors</string>
 </resources>
