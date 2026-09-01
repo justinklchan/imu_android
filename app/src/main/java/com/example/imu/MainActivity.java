@@ -638,9 +638,18 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onResume() {
         super.onResume();
         for (SensorChannel channel : channels) {
-            if (channel.isPresent()) {
+            if (!channel.isPresent()) {
+                continue;
+            }
+            try {
                 sensorManager.registerListener(this, channel.sensor,
                         SensorManager.SENSOR_DELAY_FASTEST);
+            } catch (SecurityException e) {
+                // HIGH_SAMPLING_RATE_SENSORS is declared, but a device or work
+                // profile can still refuse it. Drop to the fastest rate that
+                // never needs permission rather than taking down the app.
+                sensorManager.registerListener(this, channel.sensor,
+                        SensorManager.SENSOR_DELAY_GAME);
             }
         }
     }
